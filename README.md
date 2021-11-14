@@ -9,11 +9,19 @@ https://github.com/Andygmb/Battlefield-Portal-Helper/archive/refs/heads/develop.
 
 1. Unzip the extension
 2. Go to chrome://extensions and enable developer mode
+![extensions](https://user-images.githubusercontent.com/4010083/141685863-68ee9a8a-b874-4d73-b1d3-839089076343.png)
 3. "Load unpacked extension" in the top left
 4. You're done! 
 
+# Using the extension
 
-Todo/features planning
+1. Select a block in your rule editor
+2. Click "copy" in the extension - this will fill up the text box with the block's XML
+3. Go to any other rule editor window and click "Paste" to paste your blocks in
+
+**You can also copy in XML from other people who have shared it on discord or community sites - just paste it into the text box and click "paste"!
+**
+# Todo/features planning
 
 * make sure the event listeners are correctly loaded 
 * Favouriting/saving code blocks option
