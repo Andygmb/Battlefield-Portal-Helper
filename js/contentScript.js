@@ -1,8 +1,9 @@
+let browserObj = chrome;
 var s = document.createElement('script');
-s.src = chrome.runtime.getURL('js/script.js');
+s.src = browserObj.runtime.getURL('js/script.js');
 document.head.appendChild(s);
 
-chrome.runtime.onMessage.addListener((msg, sender, response) => {
+browserObj.runtime.onMessage.addListener((msg, sender, response) => {
 	var msgObj = {};
 	["copy", "undo", "redo", "paste"].forEach(function(key){
 		if (key in msg) {
@@ -16,5 +17,5 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
 })
 
 document.addEventListener('clipboard_copy', function(e) {
-	chrome.runtime.sendMessage({ clipboard: e.detail, newData: true});
+	browserObj.runtime.sendMessage({ clipboard: e.detail, newData: true});
 });
