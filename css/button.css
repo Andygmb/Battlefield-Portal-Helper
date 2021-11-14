@@ -21,6 +21,7 @@ textarea {
     outline: none;
     border-color: rgb(38, 255, 223);
     resize: none;
+    overflow-x: clip;
 }
 
 
