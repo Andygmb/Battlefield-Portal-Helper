@@ -1,0 +1,90 @@
+h1 {
+  cursor:pointer;
+}
+
+body {
+    background-color: rgba(30, 39, 40, 0.8);
+    color: rgb(255, 255, 255);
+    display: block;
+    min-width: 300px;
+    text-align: center;
+}
+
+textarea {
+    background: transparent;
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    min-height: 150px;
+    padding: 0px;
+    color: rgb(38, 255, 223);
+    outline: none;
+    border-color: rgb(38, 255, 223);
+    resize: none;
+}
+
+
+span.iconbutton {
+  all: unset;
+  height: 44px;
+  justify-content: center;
+  min-width: 172px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-transform: none;
+  color: rgb(22, 22, 22);
+  font-family: "TT Hoves W05 Regular", sans-serif;
+  align-items: center;
+  background-color: rgb(38, 255, 223);
+  box-sizing: border-box;
+  color: rgb(22, 22, 22);
+  cursor: pointer;
+  display: inline-block;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: 400;
+  height: 44px;
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 25px;
+  min-width: 25px;
+  outline-color: rgb(22, 22, 22);
+  outline-style: none;
+  outline-width: 0px;
+  padding: 10px;
+  pointer-events: auto;
+  position: relative;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 10px auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+span.iconbutton:hover{
+  background-color:rgb(38, 255, 223, 0.5);
+}
+
+span.iconbutton:active {
+  background-color:rgb(38, 255, 223, 0.3);
+}
+
+
+span.tinytext {
+  margin-top: 5px;
+  font-size: 10px;
+    display: block;
+    line-height: 8px;
+    color: rgba(30, 39, 40, 0.8);
+}
+span > svg {
+  display: block;
+}
+a[href*="andygmb"] {
+
+    text-align: right;
+    display: block;
+    color: white;
+    font-size: 10px;
+    border-top: 1px white groove;
+}

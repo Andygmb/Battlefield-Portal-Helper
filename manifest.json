@@ -1,0 +1,29 @@
+{
+  "name": "Battlefield Portal Helper",
+  "description": "Extends the functionality of the Battlefield Portal Rule Editor. More info at battlefield.codes",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "author":"Andy Bohan",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_icon": { 
+      "16": "img/icon16.png",
+      "24": "img/icon24.png",
+      "32": "img/icon32.png"
+    },
+    "default_title": "Battlefield Portal Helper", 
+    "default_popup": "portalhelper.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://portal.battlefield.com/experience/rules*"],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["js/contentScript.js"]
+    }
+  ],
+  "web_accessible_resources":[{
+    "resources":["js/script.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
