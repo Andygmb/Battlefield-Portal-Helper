@@ -21,6 +21,10 @@ https://github.com/Andygmb/Battlefield-Portal-Helper/archive/refs/heads/develop.
 
 **You can also copy in XML from other people who have shared it on discord or community sites - just paste it into the text box and click "paste"!**
 
+# Sharing your Blocks
+
+Made a useful Block that others would benefit from? I've opened up a repo at https://github.com/Andygmb/Battlefield-Portal-Blocks that will accept Blocks - just open a PR!
+
 # Todo/features planning
 
 * make sure the event listeners are correctly loaded 
