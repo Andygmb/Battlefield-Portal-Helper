@@ -19,8 +19,8 @@ https://github.com/Andygmb/Battlefield-Portal-Helper/archive/refs/heads/develop.
 2. Click "copy" in the extension - this will fill up the text box with the block's XML
 3. Go to any other rule editor window and click "Paste" to paste your blocks in
 
-**You can also copy in XML from other people who have shared it on discord or community sites - just paste it into the text box and click "paste"!
-**
+**You can also copy in XML from other people who have shared it on discord or community sites - just paste it into the text box and click "paste"!**
+
 # Todo/features planning
 
 * make sure the event listeners are correctly loaded 
