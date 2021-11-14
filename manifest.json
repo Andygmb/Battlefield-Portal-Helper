@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "author":"Andy Bohan",
-  "permissions": ["storage", "activeTab", "scripting"],
-  "action": {
+  "permissions": ["storage", "activeTab"],
+  "browser_action": {
     "default_icon": { 
       "16": "img/icon16.png",
       "24": "img/icon24.png",
@@ -22,8 +22,7 @@
       "js": ["js/contentScript.js"]
     }
   ],
-  "web_accessible_resources":[{
-    "resources":["js/script.js"],
-    "matches": ["<all_urls>"]
-  }]
+  "web_accessible_resources":[
+    "js/script.js"
+  ]
 }
