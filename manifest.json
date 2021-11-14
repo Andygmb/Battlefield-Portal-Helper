@@ -2,7 +2,7 @@
   "name": "Battlefield Portal Helper",
   "description": "Extends the functionality of the Battlefield Portal Rule Editor. More info at battlefield.codes",
   "version": "1.0.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "author":"Andy Bohan",
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
