@@ -1,8 +1,7 @@
-let port = chrome.runtime.connect();
 let events = ['copy', 'paste', 'undo', 'redo'];
 
 chrome.storage.local.get('current_serialized_xml', function (items) {
-    document.getElementById("blockTextArea").value = items.current_serialized_xml;
+    document.getElementById("blockTextArea").value = items.current_serialized_xml || "";
 });
 
 events.forEach(function(e){
