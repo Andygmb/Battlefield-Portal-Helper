@@ -10,12 +10,14 @@ events.forEach(function(e){
   if (e === "paste") {
     document.getElementById(e).addEventListener("click", async () => {
       browserObj.tabs.query({active: true,currentWindow: true}, tabs => {
+        console.log("got paste event in extension");
         msgObj['clipboard'] = document.getElementById("blockTextArea").value;
         browserObj.tabs.sendMessage(tabs[0].id,msgObj);
       });
     });
   } else {
     document.getElementById(e).addEventListener("click", async () => {
+      console.log("click event:", e);
       browserObj.tabs.query({active: true,currentWindow: true}, tabs => {
         browserObj.tabs.sendMessage(tabs[0].id,msgObj);
       });
@@ -25,6 +27,7 @@ events.forEach(function(e){
 
 browserObj.runtime.onMessage.addListener(function(r, sender, sendr){
   if ("newData" in r) {
+    console.log("got newData", r.clipboard);
     browserObj.storage.local.set({'current_serialized_xml':r.clipboard});
     document.getElementById("blockTextArea").value = r.clipboard;
   }
