@@ -45,9 +45,12 @@ function mainBlocklyListeners(){
 	var checkInterval = setInterval(checkForBlocklyLoad, 1000);
 
 	function checkForBlocklyLoad() {
-	    if (typeof _Blockly != "undefined") {
-	        clearInterval (checkInterval);
-	        mainBlocklyListeners();
+	    if (typeof _Blockly != "undefined" ) {
+	    	if(_Blockly.getMainWorkspace() !== null) {
+	    		console.log("Loading BF Portal Helper event listeners")
+		        clearInterval (checkInterval);
+		        mainBlocklyListeners();
+	    	}
 	    }
 	}
 })();
