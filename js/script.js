@@ -5,18 +5,16 @@ setTimeout(function() {
 			var selected = _Blockly.selected;
 			if (selected !== null) {
 				var copied = xmlserializer.serializeToString(selected.toCopyData().xml);
-				console.log(copied);
+				console.debug(copied);
 				document.dispatchEvent(new CustomEvent('clipboard_copy', {
 					detail: copied
 				}));
 			}
 		};
 		if (event.data.paste) {
-			var newBlock;
-			_Blockly.clipboardXml_ = _Blockly.Xml.textToDom(event.data.clipboard);
-			_Blockly.clipboardSource_ = _Blockly.getMainWorkspace();
-			newBlock = _Blockly.Xml.domToBlock(_Blockly.clipboardXml_, _Blockly.clipboardSource_);
-			_Blockly.clipboardTypeCounts = _Blockly.utils.getBlockTypeCounts(newBlock, true);
+			var xml = _Blockly.Xml.textToDom(event.data.clipboard);
+			var ws =  _Blockly.getMainWorkspace();
+			var newBlock = _Blockly.Xml.domToBlock(xml,ws);
 			if (newBlock.type === "modBlock") {
 				// modBlocks can't be deleted which could cause confusion.
 				// so unplug the child blocks and dispose of the modBlock
