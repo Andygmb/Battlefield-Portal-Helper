@@ -2,7 +2,7 @@ let events = ['copy', 'paste', 'undo', 'redo'];
 let browserObj = chrome;
 
 browserObj.storage.local.get('current_serialized_xml', function (items) {
-    document.getElementById("blockTextArea").value = items.current_serialized_xml || "";
+    document.getElementById("blockTextArea").value = items.current_serialized_xml || "Select a block and click 'copy'";
 });
 
 events.forEach(function(e){

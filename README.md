@@ -5,7 +5,7 @@ Battlefield Portal Helper chrome extension
 
 Download the latest version:
 
-https://github.com/Andygmb/Battlefield-Portal-Helper/archive/refs/heads/develop.zip
+https://github.com/Andygmb/Battlefield-Portal-Helper/archive/refs/heads/main.zip
 
 1. Unzip the extension
 2. Go to chrome://extensions and enable developer mode
@@ -20,6 +20,10 @@ https://github.com/Andygmb/Battlefield-Portal-Helper/archive/refs/heads/develop.
 3. Go to any other rule editor window and click "Paste" to paste your blocks in
 
 **You can also copy in XML from other people who have shared it on discord or community sites - just paste it into the text box and click "paste"!**
+
+# Sharing your Blocks
+
+Made a useful Block that others would benefit from? I've opened up a repo at https://github.com/Andygmb/Battlefield-Portal-Blocks that will accept Blocks - just open a PR!
 
 # Todo/features planning
 

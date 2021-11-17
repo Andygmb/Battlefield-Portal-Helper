@@ -16,7 +16,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://portal.battlefield.com/experience/rules*"],
+      "matches": ["https://portal.battlefield.com/*experience*"],
       "run_at": "document_end",
       "all_frames": true,
       "js": ["js/contentScript.js"]
