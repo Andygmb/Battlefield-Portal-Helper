@@ -3,15 +3,12 @@ Battlefield Portal Helper chrome extension
 
 # How to Install
 
-Download the latest version:
+Download the latest version for firefox:
 
-https://github.com/Andygmb/Battlefield-Portal-Helper/archive/refs/heads/main.zip
+https://addons.mozilla.org/firefox/downloads/file/3869660/battlefield_portal_helper-1.0.0-fx.xpi
 
-1. Unzip the extension
-2. Go to chrome://extensions and enable developer mode
-![extensions](https://user-images.githubusercontent.com/4010083/141685863-68ee9a8a-b874-4d73-b1d3-839089076343.png)
-3. "Load unpacked extension" in the top left
-4. You're done! 
+Install the extension via about:debugging#/runtime/this-firefox in firefox
+
 
 # Using the extension
 
